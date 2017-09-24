@@ -1,0 +1,82 @@
+CS 293
+Data Structures and Algorithms Lab
+
+Lab 7
+-----------
+
+In this lab you are required to implement and test a data structure, the binary search
+tree (BST), which aids in "quick" searching of stored data. 
+The binary search tree, is a tree where all nodes have a single parent
+and atmost two children (except the root which does not have a parent).
+Additionally, the binary search tree obeys the invariant that
+for every node in the tree, all nodes in its "left" sub-tree are smaller 
+in value and all nodes in the "right" sub-tree are larger in value. The 
+tree is accessed via the root node of the tree.
+
+Implement a header file that specifies the class declaration of
+a binary search tree. It should include as private elements all the
+relevant/required data variables and the public member functions provide
+access to functionality and data of the binary search tree nodes.
+
+Following functionality is required:
+0 -> Print the tree in inorder, postorder and preorder fashion:
+     Inorder : For each node (starting from the root), print its left subtree, then its own value, then its right subtree
+     Preorder : For each node (starting from the root) print its own value, then print its left subtree,then its right subtree
+     Postorder : For each node (starting from the root) print its left subtree, then its right subtree and then its own value
+
+1 -> insert(x) : Insertion (addition) of a node with a given value to the tree
+      Note : You may assume that all values in the bst are distinct at any time (the testcases follow this).
+2 -> search(x) : Searching a given value in a tree
+3 -> delete(x) : Deletion of a node with a given value from the tree (if it exists, else do nothing)
+     You'll need to take care of the following 3 cases (the tree may not be unique after deleting a node)
+     (a) Delete a node with no child
+     (b) Delete a node with exactly one child
+     (c) Delete a node with two children (a bit tricky!)
+
+     Note : you won't be required to print in postorder or preorder fashion after a delete operation since they may not be unique (depends on the way you delete)
+  
+4 -> Lowest Common Ancestor(x, y): Print the value of a node that is the lowest common ancestor of nodes with values x and y
+     The lowest common ancestor is the node in a tree such that both nodes (with values x,y) are its descendants.
+     We allow a node to be a descendant of itself.
+     If either x or y doesn't exist in the tree print -1
+     
+5 -> minTurns(x,y) : Count the minimum number of turns to reach from value x to y in the tree. 
+     If either x or y doesn't exist in the tree print -1
+     A turn is a change in direction while following a path if bst is represented as shown in the example.
+     
+Note: The instructions for writing main.cpp are given in README
+
+eg. After the following set of operations on an empty tree:
+
+Insert(5)
+Insert(1)
+Insert(2)
+Insert(6)
+Insert(0)
+
+The tree looks like :
+        5
+       / \
+      1   6
+     / \
+    0   2
+
+Inorder : 0 1 2 5 6
+Preorder : 5 1 0 2 6
+Postorder : 0 2 1 6 5
+search(10) : false
+search(6) : true
+LCA(1,2) : 1
+LCA(2, 6) : 5
+LCA(2, 0) : 1
+minTurns(2,6) : 2 (where the sequence of nodes is 2-->1-->5-->6 and turns occur at 1 and 5)
+minTurns(0,6) : 1 (where the sequence of nodes is 0-->1-->5-->6 and a turn occurs at 5)
+
+
+You are required to submit the following three files as ONE tar.gz file:
+  rollno_lab7.tar.gz
+      |
+      |__bst.h
+      |__bst.cpp
+      |__main.cpp
+

@@ -1,0 +1,96 @@
+Problem 4  Unique Tuples :
+-------------------------
+
+Description :
+
+You are given a permutation of numbers from 1 to n. You need to find
+the number of UNIQUE ordered pairs (a,b),(a != b) ie. 'a' should not be 
+equal to 'b' such that there exists a subarray in the given permutation 
+such that a is the maximum in the subarray and b is the second maximum. 
+
+Note that a subarray is a continuous segment in an array ie. given
+that array is of length n and using 1-based indexing any (a[i],a[i+1],..,a[j])
+is a subarray when 1 <= i <= j <= n. 
+
+Constraints :
+
+1 <= n <= 100000 where n is the size of the permutation
+
+Input format :
+
+The first line of the input contains the integer n.
+The next line contains n space separated distinct integers 
+(1 <= a[i] <= n) denoting the permutation. 
+
+Output format :
+
+Output the number of such pairs in a single line.
+
+Example :
+----------------------------------------------------
+Input 
+
+5
+1 2 3 4 5
+
+Output
+
+4
+
+Explanation :
+
+All possible subarrays and the ordered pair in those subarrays are :
+(Ordered pair (x,y) means that x is the maximum and y is the second
+maximum)
+
+1              - No such ordered pair 
+1 2            - (1,2)
+1 2 3          - (2,3)
+1 2 3 4        - (3,4)
+1 2 3 4 5      - (4,5)
+2              - No such ordered pair
+2 3            - (2,3)
+2 3 4          - (3,4)
+2 3 4 5        - (4,5)
+3              - No such ordered pair
+3 4            - (3,4)
+3 4 5          - (4,5)
+4              - No such ordered pair
+4 5            - (4,5)
+5              - No such ordered pair
+
+The unique pairs are (1,2),(2,3),(3,4),(4,5).
+Hence the number of such pairs is 4. 
+---------------------------------------------------
+Input
+
+1
+1
+
+Output
+
+0
+--------------------------------------------------
+Input
+
+3
+3 2 1
+
+Output
+
+2
+--------------------------------------------------
+Input
+
+4
+1 4 2 3
+
+Output
+
+4
+--------------------------------------------------
+
+Note that we expect an O(n) algorithm to solve this question.
+
+Submission file : p4.cpp
+Problem Courtesy: Hackerearth !!

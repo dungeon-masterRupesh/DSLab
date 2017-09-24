@@ -1,0 +1,37 @@
+CS 293
+Lab 7
+-------------
+
+You have to write your own main.cpp file. Create an object of your BST class and do the operations on it.
+You have to take a character as input and do the operations as specified below. Repeat the same until the character is '0'.
+
+Input Output format
+-------------------------
+
+i <n> <num_1> <num_2> ... <num_n>              	--insert n numbers in your BST
+
+x												--print value of nodes in inorder traversal
+y 												--print value of nodes in preorder traversal
+z 												--print value of nodes in postorder traversal
+												
+												--in all the traversals the values should be separated with spaces
+
+s <num>											--print 1 if <num> is present, 0 otherwise
+d <num>											--delete <num> if present, do nothing otherwise
+l <num_1> <num_2>								--print the value of least common ancestor, if both
+													values are in BST, -1 otherwise
+t <num_1> <num_2>								--print minturns b/w <num_1> and <num_2>, if both
+													values are in BST, -1 otherwise
+
+0												--exit
+
+Note : print endline character following each print instruction
+
+Marks Distribution:
+		
+Section1 (insert) 	: 1.5
+Section2 (search) 	: 1	
+Section3 (delete) 	: 3
+Section4 (lca)	 	: 2.5	
+Section5 (minTurns) : 2	
+

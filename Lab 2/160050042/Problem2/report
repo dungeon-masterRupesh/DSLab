@@ -1,0 +1,27 @@
+
+
+FOR MULT
+
+IJK->real	0m0.517s
+user	0m0.503s
+sys	0m0.004s
+
+JIK->
+real	0m0.547s
+user	0m0.533s
+sys	0m0.004s
+
+KJI->
+real	0m0.491s
+user	0m0.475s
+sys	0m0.003s
+
+KIJ->
+
+real	0m0.459s
+user	0m0.449s
+sys	0m0.000s
+
+
+done by format 
+time ./a.out <input >output

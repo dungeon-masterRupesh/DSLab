@@ -1,0 +1,34 @@
+CS 293
+Graded Lab 1
+---------------
+This lab has 4 questions. Each has been described in a separate file.
+The testcases provided to you are only minimal and the testcases on which
+your code will be tested will be different. Please see the required time
+complexities for each problem.
+You are expected to follow the correct input and output format.
+
+Weightages for the problems are as follows:
+Problem 1 - 2 Marks
+Problem 2 - 2 Marks
+Problem 3 - 3 marks
+Problem 4 - 3 Marks
+-------------------
+Total     - 10 Marks
+-------------------
+
+Submission format:
+
+rollno_gl1.tar.gz
+	|
+	|__rollno_gl1
+		|
+		|___p1.cpp
+		|___p2.cpp
+		|___p3.cpp
+		|___p4.cpp
+
+Note:
+1. You have to follow the correct submission format and file names. No marks will be given otherwise.
+2. Your code will be evaluated on the basis of testcases and also by reading through your code to see
+if the guidelines have been followed properly.
+3. All forms of academic dishonesty will be dealt with very seriously (both in the graded and ungraded labs).
